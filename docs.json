@@ -1,14 +1,26 @@
 {
   "name": "Link Shortener",
-  "logo": "/logo/light.svg",
-  "navigation": [
-    {
-      "group": "Overview",
-      "pages": ["index", "quickstart"]
-    },
-    {
-      "group": "User Guide",
-      "pages": ["user-manual/user-manual"]
-    }
-  ]
+  "logo": "/logo/favicon.svg",
+  "theme": "mint",
+  "colors": {
+    "primary": "#4CAF50"
+  },
+  "navigation": {
+    "languages": [],
+    "versions": [],
+    "tabs": [],
+    "dropdowns": [],
+    "anchors": [],
+    "groups": [
+      {
+        "name": "Overview",
+        "pages": ["index", "quickstart"]
+      },
+      {
+        "name": "User Guide",
+        "pages": ["user-manual/user-manual"]
+      }
+    ],
+    "pages": []
+  }
 }
