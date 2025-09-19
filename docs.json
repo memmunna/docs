@@ -18,14 +18,21 @@
             ]
           },
           {
-            "group": "Authentication",
+            "group": "User Dashboard",
             "pages": [
-              "user-manual/registration"
+              "user-dashboard/authentication",
+              "user-dashboard/user-profile",
+              "user-dashboard/overview",
+              "user-dashboard/links",
+              "user-dashboard/group",
+              "user-dashboard/pixel",
+              "user-dashboard/custom-domain"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Admin Dashboard",
             "pages": [
+              "admin-dashboard/authentication"
             ]
           },
           {
@@ -36,20 +43,16 @@
         ]
   },
   "logo": {
-    "light": "/logo/logo.jpeg",
-    "dark": "/logo/logo.jpeg"
+    "light": "/logo/logo-light-theme.jpeg",
+    "dark": "/logo/logo-dark-theme.jpeg"
   },
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Support",
+      "href": "https://support.softnio.com/"
     }
   },
   "contextual": {
