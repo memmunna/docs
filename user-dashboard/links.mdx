@@ -3,59 +3,136 @@ title: Links
 slug: user-dashboard/links
 ---
 
-## Links Page Overview – Empty State
+
+The Links feature allows users to create, manage, and track shortened URLs. Users can access the Links page from the navigation menu and view existing links, create new ones, edit, delete, and configure advanced options such as UTM parameters, password protection, expiration, targeting, and rotation.
+
+### How can I access the Links page?
+- From the navigation menu bar, click **Links**.  
+- You will be redirected to the Shortened Links list page.  
+- If there are no links, the page shows the option to create a new short link directly.  
+
+![Links Access](/images/links/links-access.png)  
+![No Links Available](/images/links/no-link.png)
+
+### What does the Shortened Links page contain?
+- **Search and Filters:** Filter links by date, group, pixel, or other criteria.
+- **Columns and Actions:**
+  - Short Link (URL)
+  - Original Link Title & Favicon
+  - Clicks / Unique Clicks
+  - Group Name
+  - Pixels
+  - Status
+  - Copy Icon (copies the link)
+  - Visit Icon (opens link in a new tab)
+  - Share Icon
+  - 3-dot Menu (Edit, Visit, Statistics, Delete)  
+![Links List](/images/links/link-index.png)
+
 ---
-The Links page displays all user links. For new users or accounts with no links, it initially shows only the option to create a new short link.
 
-**Screenshot**
-![Empty Links Page](/images/links/link-index1.png)
+## Creating a Short Link
+### How do I create a new short link?
+- Click **Add Link** from the list page.  
+- A modal opens to input the **Destination URL**.  
+![Add Link Modal](/images/links/link-create.png)
 
-## Create Short Link
+- After entering a URL, additional optional fields appear:
+  - Domain selection for short link
+  - Alias update
+  - UTM Builder
+  - Enable **Password Protect this link**  
+- Click **Create Link** to save.  
+
+![Additional Fields](/images/links/link-create2.png)  
+![Password Protected Option](/images/links/link-create3.png)
+
+- **UTM Builder:** Click the UTM button to open a popup for:
+  - Source, Medium, Campaign, Term, Content
+  - Live link preview
+  - Save to apply  
+![UTM Builder Popup](/images/links/link-create4.png)
+
+- After creation, a success modal shows:
+  - Copy Link button
+  - **More Settings** (redirects to Edit page)
+  - Share options (social media icons)  
+![Link Created Successfully](/images/links/create-complete.png)
+
+### How do I share a link?
+- Click the Share icon from the list or success modal.  
+- All social sharing options appear.  
+![Share Link Options](/images/links/share-link.png)
+
 ---
-Users can input a destination URL to create a short link. A pop-up shows the short link, destination URL, allows domain selection, alias update, password protection, and options to copy, share, or edit the link.
 
-**Screenshots**
+## What is the 3-dot menu?
+Each link has a **3-dot menu** that provides quick access to actions:
 
-***Create Short Link Pop-up***
-![Create Short Link Pop-up](/images/links/link-first-create.png)
+- **Edit:** Open the link edit page/modal  
+- **Visit:** Open the destination URL in a new tab  
+- **Statistics:** View detailed link statistics  
+- **Delete:** Permanently delete the link  
 
-***After Link Creation***
-![Link Creation Complete](/images/links/create-complete.png)
+![3-dot Menu Screenshot](/images/links/3dot-menu.png)
 
-## Links List Page
 ---
-Once links are created, the Links List page displays all shortened links with details, statistics, and action options. Users can also create new links, export data, and apply filters.
 
-**Screenshot**
-![Links List Page](/images/links/link-index.png)
+## Managing Existing Links
+### How can I edit a link?
+- From the list, click the **Edit icon** or **More Settings**.  
+- Update Destination Url, domain, alias, link title, select pixel, select groups
+- Enable/Disable **Password Protect**
+- Enable/Disable **Statistics Public Access**
+- The edit modal shows pre-populated data. Update fields and click **Save Changes**.
+![Edit Link Modal](/images/links/link-edit.png)
 
-## Create Link from List Page
 ---
-Clicking **Add Link** on the list page opens a pop-up for creating links with additional fields such as domain selection, UTM builder, and password protection. A confirmation pop-up appears after creation.
 
-**Screenshots**
+#### Add/Edit **UTM Builder**  
+![UTM Builder Edit](/images/links/link-edit2.png)
+#### Set **Expiration**: 
+    - Schedule : By default dsiable. User may enable. When enbaled then mandatory field should filled
+        - Schedule with Start/End Date-Time
+        - Expiration Url, after crossed End Time 
+    - Expiration afetr Max click : By default dsiable. User may enable. When enbaled then mandatory field should filled
+        - Add maximum clicks
+        - Expiration Url ,  after crossed maximum clicks 
+![Expiration Settings](/images/links/link-edit3.png) 
+![Expiration Options](/images/links/link-edit4.png)
 
-***Add Link from List Page***
-![Add Link Button](/images/links/link-create.png)
-
-***Enter Destination URL***
-![Enter Destination URL](/images/links/link-create2.png)
-
-***After Link Creation***
-![Link Creation Complete](/images/links/create-complete.png)
-
-## Edit Link
 ---
-Users can edit existing links from the list or statistics page, updating options and saving changes immediately.
 
-**Screenshot**
-![Edit Link Page](/images/links/link-edit.png)
+#### Set **Targeting**:
+  - Enable targeting
+  - Add new target by selecting Country, Device, OS, Language, Browser
+  - Assign specific URL per target  
+![Targeting Option](/images/links/link-edit5.png)
 
-## Link Statistics Page
 ---
-Detailed statistics for each link include total clicks, daily and unique clicks, click charts, breakdowns by device, browser, OS, location, referrer, language, and recent activity.
 
-**Screenshots**
-![Link Statistics Overview 1](/images/links/statistics-1.png)  
-![Link Statistics Overview 2](/images/links/statistics-2.png)  
-![Link Statistics Overview 3](/images/links/statistics-3.png)
+#### Set **Rotation**:
+  - Configure rotation type (Sequence, Random, Percentage)
+  - Add multiple URLs to distribute traffic  
+![Rotation Option](/images/links/link-edit7.png)
+
+---
+
+### How can I delete a link?
+- Click the **Delete** option from the 3-dot menu.  
+- A double confirmation popup appears. Click **Delete** to permanently remove the link.  
+![Delete Confirmation](/images/links/delete-double-confirm.png)
+
+---
+
+### How do I visit a short link?
+- Click the Visit icon or Visit option in the 3-dot menu.
+- The link opens in a new tab.
+- If password-protected, then password input option visible . After submit correct password then redirect to destination url; otherwise, direct redirect to destinetion url.
+![Password Protected Visit](/images/links/password-protected.png)
+
+---
+
+### How can I view link statistics?
+- From the 3-dot menu, click **Statistics**.  
+- [Go to Link Statistics](/user-dashboard/statistics#link-statistics)

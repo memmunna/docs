@@ -3,23 +3,134 @@ title: Authentication
 #slug: user-dashboard/authentication
 ---
 
-## Registration
----
-Users can register with email and password by accepting terms and conditions, receiving a verification link via email, or sign up instantly using Google/Facebook without email verification.
+Authentication ensures secure access to the system by managing account creation, login, and password recovery.
 
-**Screenshot**
-![Registration Form](/images/authentication/registration.png)
+---
+
+## Registration
+
+The **Registration** feature allows users to create a new account using their email and password or social accounts like Google and Facebook.  
+Depending on admin settings, email verification or OTP verification may be required.
+
+
+### How can I register for a new account?
+- Go to the *Registration* page.  
+- Enter email, password, accept terms & conditions.  
+- Click **Create Account**.  
+
+![Registration page](/images/authentication/registration.png)
+
+---
+
+### What happens after I register with email and password?
+- A verification email is sent.  
+- Click the **Verify** button in the email to confirm your account.  
+
+![Verification Email](/images/authentication/varify-email.png)
+
+---
+
+### Is email verification always required?
+- Not always.  
+- If enabled by admin, after clicking *Create Account* you’ll be redirected to an **OTP Verification** page.  
+- Enter the OTP sent to your email to complete registration.  
+
+![OTP Verification page](/images/authentication/registration-otp-varify.png)
+
+---
+
+### What happens after I verify my account?
+- You’ll receive a **welcome email**.  
+- You’ll be redirected to the **Login page**.  
+
+![Welcome Email](/images/authentication/welcome-email.png)
+
+---
+
+### Can I register using social accounts?
+- Yes, Google and Facebook are supported.  
+- No verification email is required.  
+- Account is created instantly.  
+
+---
+
+### What if I don’t receive the verification or OTP email?
+- Check your **Spam/Junk** folder.  
+- If not found, click **Resend Email/OTP** on the verification page.  
+
+---
 
 ## Login
----
-Users can log in with valid email and password, optionally select "Remember Me," and upon success are redirected to the dashboard.
 
-**Screenshot**
+The **Login** feature allows registered users to access their accounts using email & password, with optional *Remember Me*.  
+If **Two-Factor Authentication (2FA)** is enabled, an additional verification step is required.  
+Social login is also supported.
+
+
+
+### How can I log in to my account?
+- Enter registered email & password.  
+- (Optional) Check **Remember Me**.  
+- Click **Login**.  
+
 ![Login Form](/images/authentication/login.png)
 
-## Forgot Password
 ---
-Users can reset their password by clicking `Forgot Password` on the login page, entering their registered email, and setting a new password via the reset link sent to their email.
 
-**Screenshot**
+### What happens after I log in successfully?
+- You’ll be redirected to your **Dashboard**.  
+
+---
+
+### What if Two-Factor Authentication (2FA) is enabled?
+- After entering credentials, you’ll be redirected to the **2FA Verification page**.  
+- Enter your **2FA code** and click **Verify Code** to continue.  
+
+![2FA Authentication Form](/images/authentication/login-with-2fa.png)
+
+---
+
+### Can I log in with social accounts?
+- Yes, if your Google or Facebook account is connected.  
+- No need to enter email or password.  
+
+---
+
+## Forgot Password
+
+The **Forgot Password** feature allows users to securely reset their password by verifying their registered email.
+
+
+
+### How can I reset my password?
+- On the **Login page**, click **Forgot Password**.  
+- You’ll be redirected to the **Reset Password page**.  
+
 ![Forgot Password Form](/images/authentication/forgot-password.png)
+
+---
+
+### What do I need to do on the reset page?
+- Enter your **registered email**.  
+- Click **Reset Password**.  
+- A reset link will be sent to your email.  
+
+![Reset Password Email](/images/authentication/Reset-password-email.png)
+
+---
+
+### How do I set a new password?
+- Open the **reset email** and click **Reset Password**.  
+- Enter and confirm your new password.  
+- Click **Reset Password**.  
+
+![Set Password Page](/images/authentication/password-setup.png)
+
+---
+
+### What happens after I reset my password?
+- Your password is updated.  
+- You’ll be redirected to the **Login page**.  
+- A **confirmation email** will be sent.  
+
+![Password Changed Email](/images/authentication/password-change-email.png)

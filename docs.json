@@ -22,10 +22,9 @@
             "pages": [
               "user-dashboard/authentication",
               "user-dashboard/user-profile",
-              "user-dashboard/overview",
               "user-dashboard/links",
-              "user-dashboard/group",
-              "user-dashboard/pixel",
+              "user-dashboard/groups-&-pixel",
+              "user-dashboard/statistics",
               "user-dashboard/custom-domain"
             ]
           },
